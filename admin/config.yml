@@ -1,0 +1,197 @@
+backend:
+  name: github
+  repo: guodiankun88/guodiankun-portfolio
+  branch: main
+  base_url: https://your-oauth-proxy-url.vercel.app
+  auth_endpoint: oauth
+
+# 图片上传位置
+media_folder: "images"
+public_folder: "images"
+
+# 站点基础信息
+site_url: https://guodiankun88.github.io/guodiankun-portfolio
+logo_url: https://guodiankun88.github.io/guodiankun-portfolio/images/profile.png
+
+# 中文界面
+locale: zh_Hans
+
+collections:
+  - name: "site"
+    label: "网站内容"
+    files:
+      - file: "content/profile.json"
+        label: "首页头图"
+        name: "profile"
+        fields:
+          - { label: "求职标签", name: "badge", widget: "string" }
+          - { label: "姓名", name: "name", widget: "string" }
+          - { label: "标题", name: "title", widget: "string" }
+          - { label: "个人简介", name: "description", widget: "text" }
+          - { label: "头像", name: "profileImage", widget: "image" }
+          - label: "按钮"
+            name: "buttons"
+            widget: "list"
+            fields:
+              - { label: "文字", name: "label", widget: "string" }
+              - { label: "链接", name: "url", widget: "string" }
+              - label: "样式"
+                name: "style"
+                widget: "select"
+                options: ["primary", "outline"]
+              - { label: "是否下载", name: "download", widget: "boolean", default: false }
+
+      - file: "content/about.json"
+        label: "关于我"
+        name: "about"
+        fields:
+          - label: "自我介绍段落"
+            name: "intro"
+            widget: "list"
+            field: { label: "段落", name: "paragraph", widget: "text" }
+          - label: "教育背景"
+            name: "education"
+            widget: "list"
+            fields:
+              - { label: "学校", name: "school", widget: "string" }
+              - { label: "学位", name: "degree", widget: "string" }
+              - { label: "地点", name: "location", widget: "string" }
+              - { label: "时间", name: "date", widget: "string" }
+
+      - file: "content/strengths.json"
+        label: "核心优势"
+        name: "strengths"
+        fields:
+          - label: "优势卡片"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "图标（Emoji）", name: "icon", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "描述", name: "description", widget: "text" }
+
+      - file: "content/experience.json"
+        label: "工作经历"
+        name: "experience"
+        fields:
+          - label: "工作条目"
+            name: "jobs"
+            widget: "list"
+            fields:
+              - { label: "公司", name: "company", widget: "string" }
+              - { label: "时间", name: "date", widget: "string" }
+              - { label: "职位", name: "role", widget: "string" }
+              - { label: "重点项目", name: "featured", widget: "boolean", default: false, hint: "仅最新一份工作经历建议勾选" }
+              - label: "职责要点"
+                name: "bullets"
+                widget: "list"
+                field: { label: "要点", name: "bullet", widget: "text" }
+
+      - file: "content/stats.json"
+        label: "数据亮点"
+        name: "stats"
+        fields:
+          - label: "数据项"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "数值", name: "value", widget: "string" }
+              - { label: "标签", name: "label", widget: "string" }
+
+      - file: "content/featured.json"
+        label: "重点项目"
+        name: "featured"
+        fields:
+          - { label: "英文标签", name: "tag", widget: "string" }
+          - { label: "标题", name: "title", widget: "string" }
+          - { label: "副标题", name: "subtitle", widget: "text" }
+          - label: "项目卡片"
+            name: "cards"
+            widget: "list"
+            fields:
+              - { label: "图标（Emoji）", name: "icon", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "描述", name: "description", widget: "text" }
+              - label: "数据标签"
+                name: "data"
+                widget: "list"
+                fields:
+                  - { label: "数值", name: "value", widget: "string" }
+                  - { label: "标签", name: "label", widget: "string" }
+
+      - file: "content/skills.json"
+        label: "技能与工具"
+        name: "skills"
+        fields:
+          - label: "技能分类"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "分类标题", name: "title", widget: "string" }
+              - label: "技能标签"
+                name: "tags"
+                widget: "list"
+                field: { label: "标签", name: "tag", widget: "string" }
+
+      - file: "content/portfolio.json"
+        label: "作品案例"
+        name: "portfolio"
+        fields:
+          - label: "筛选标签"
+            name: "tabs"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "显示文字", name: "label", widget: "string" }
+          - label: "作品条目"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "描述", name: "description", widget: "text" }
+              - { label: "图片", name: "image", widget: "image" }
+              - { label: "分类 ID", name: "category", widget: "string", hint: "需与某个筛选标签的 ID 对应" }
+              - { label: "角标", name: "badge", widget: "string" }
+              - label: "数据指标"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "数值", name: "value", widget: "string" }
+                  - { label: "标签", name: "label", widget: "string" }
+
+      - file: "content/videos.json"
+        label: "视频作品"
+        name: "videos"
+        fields:
+          - label: "视频条目"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "元信息", name: "meta", widget: "string" }
+              - { label: "封面图", name: "image", widget: "image" }
+
+      - file: "content/contact.json"
+        label: "联系方式"
+        name: "contact"
+        fields:
+          - { label: "姓名", name: "title", widget: "string" }
+          - { label: "副标题", name: "subtitle", widget: "string" }
+          - label: "联系项"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "图标（Emoji）", name: "icon", widget: "string" }
+              - { label: "标签", name: "label", widget: "string" }
+              - { label: "内容", name: "value", widget: "string" }
+          - label: "操作按钮"
+            name: "actions"
+            widget: "list"
+            fields:
+              - { label: "文字", name: "label", widget: "string" }
+              - { label: "链接", name: "url", widget: "string" }
+              - label: "样式"
+                name: "style"
+                widget: "select"
+                options: ["primary", "outline"]
+              - { label: "是否下载", name: "download", widget: "boolean", default: false }

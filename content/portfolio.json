@@ -1,0 +1,141 @@
+{
+  "tabs": [
+    {
+      "id": "all",
+      "label": "全部"
+    },
+    {
+      "id": "account",
+      "label": "账号运营"
+    },
+    {
+      "id": "content",
+      "label": "爆款内容"
+    },
+    {
+      "id": "social",
+      "label": "海外社媒"
+    }
+  ],
+  "items": [
+    {
+      "title": "蓝莎置业",
+      "description": "英国房产垂类专业号，品牌品宣与直播运营结合，持续输出房产干货与项目解读。",
+      "image": "images/account-lansha.png",
+      "category": "account",
+      "badge": "房产专业号",
+      "stats": [
+        {
+          "value": "1.8W",
+          "label": "粉丝"
+        },
+        {
+          "value": "9W",
+          "label": "赞藏"
+        }
+      ]
+    },
+    {
+      "title": "小黎睇楼日记",
+      "description": "英国生活与房产分享个人号，热点捕捉与垂类视频结合，打造高粘性房产 IP。",
+      "image": "images/account-xiaoli.png",
+      "category": "account",
+      "badge": "个人 IP 号",
+      "stats": [
+        {
+          "value": "9134",
+          "label": "粉丝"
+        },
+        {
+          "value": "16.6W",
+          "label": "赞藏"
+        }
+      ]
+    },
+    {
+      "title": "华阁 Global Prime Living",
+      "description": "豪宅纯享垂类专业号，目标高净值高预算客户，单周最高咨询量 50+。",
+      "image": "images/account-huage.png",
+      "category": "account",
+      "badge": "豪宅垂类号",
+      "stats": [
+        {
+          "value": "3312",
+          "label": "粉丝"
+        },
+        {
+          "value": "2.4W",
+          "label": "赞藏"
+        }
+      ]
+    },
+    {
+      "title": "留学垂类素人号矩阵",
+      "description": "专业分享、留学日常、经验分享，打造英国/香港留学人设，实现高转化签单。",
+      "image": "images/account-study.png",
+      "category": "account",
+      "badge": "留学素人号",
+      "stats": [
+        {
+          "value": "200+",
+          "label": "粉丝增长"
+        },
+        {
+          "value": "20%+",
+          "label": "转化率"
+        }
+      ]
+    },
+    {
+      "title": "「身价39亿英镑的夏洛特公主」",
+      "description": "结合英国王室热点与房产/生活方式话题，单篇笔记获得高赞藏与分享。",
+      "image": "images/content-princess.jpg",
+      "category": "content",
+      "badge": "热点爆款",
+      "stats": [
+        {
+          "value": "454",
+          "label": "点赞"
+        },
+        {
+          "value": "58",
+          "label": "收藏"
+        }
+      ]
+    },
+    {
+      "title": "「伦敦蛇年春节凑热闹好去处」",
+      "description": "伦敦春节生活指南选题，结合在地文化与节日氛围，增强账号亲和力与本地感。",
+      "image": "images/content-spring-festival.jpg",
+      "category": "content",
+      "badge": "生活选题",
+      "stats": [
+        {
+          "value": "217",
+          "label": "点赞"
+        },
+        {
+          "value": "210",
+          "label": "收藏"
+        }
+      ]
+    },
+    {
+      "title": "Instagram / Facebook 运营",
+      "description": "发布活动文案、收房案例、新房预热、热点图文及国内平台买房视频搬运，服务海外华人客群。",
+      "image": "images/social-instagram.png",
+      "category": "social",
+      "badge": "海外社媒",
+      "stats": [
+        {
+          "value": "Ins",
+          "label": "内容运营"
+        },
+        {
+          "value": "FB",
+          "label": "活动传播"
+        }
+      ]
+    }
+  ]
+}

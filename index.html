@@ -1,0 +1,1701 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>郭殿琨 | 内容运营 & 新媒体策划</title>
+  <meta name="description" content="郭殿琨个人作品网站 - 内容运营、新媒体策划、PR传播方向。擅长从0到1搭建账号、矩阵运营、内容策划与增长转化。">
+  <style>
+    :root {
+      --sky-50: #f0f9ff;
+      --sky-100: #e0f2fe;
+      --sky-200: #bae6fd;
+      --sky-300: #7dd3fc;
+      --sky-500: #0ea5e9;
+      --sky-600: #0284c7;
+      --sky-700: #0369a1;
+      --slate-50: #f8fafc;
+      --slate-100: #f1f5f9;
+      --slate-200: #e2e8f0;
+      --slate-400: #94a3b8;
+      --slate-500: #64748b;
+      --slate-600: #475569;
+      --slate-700: #334155;
+      --slate-800: #1e293b;
+      --slate-900: #0f172a;
+      --white: #ffffff;
+      --shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.08), 0 2px 4px -2px rgba(14, 165, 233, 0.06);
+      --shadow-lg: 0 10px 25px -5px rgba(14, 165, 233, 0.12), 0 8px 10px -6px rgba(14, 165, 233, 0.08);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --max-width: 1120px;
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: var(--slate-800);
+      background: linear-gradient(180deg, var(--sky-50) 0%, var(--white) 20%, var(--slate-50) 100%);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(14, 165, 233, 0.1);
+      transition: var(--transition);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 72px;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--sky-700);
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.95rem;
+      color: var(--slate-600);
+      font-weight: 500;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--sky-600);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--sky-500);
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      background: var(--sky-500);
+      color: var(--white) !important;
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    .nav-cta:hover {
+      background: var(--sky-600);
+      transform: translateY(-1px);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--slate-700);
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 160px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -200px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, var(--sky-200) 0%, transparent 70%);
+      opacity: 0.6;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--sky-100) 0%, transparent 70%);
+      opacity: 0.8;
+      z-index: 0;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--white);
+      color: var(--sky-700);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+      border: 1px solid var(--sky-100);
+    }
+
+    .hero-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--sky-500);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero h1 span {
+      color: var(--sky-600);
+    }
+
+    .hero-title {
+      font-size: 1.35rem;
+      color: var(--slate-600);
+      font-weight: 400;
+      margin-bottom: 24px;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--slate-500);
+      max-width: 520px;
+      margin-bottom: 36px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--sky-500);
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(14, 165, 233, 0.35);
+    }
+
+    .btn-primary:hover {
+      background: var(--sky-600);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+    }
+
+    .btn-outline {
+      background: var(--white);
+      color: var(--slate-700);
+      border: 1px solid var(--slate-200);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--sky-300);
+      color: var(--sky-600);
+      background: var(--sky-50);
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      object-fit: cover;
+      aspect-ratio: 3/4;
+    }
+
+    .hero-image::before {
+      content: "";
+      position: absolute;
+      inset: -20px;
+      background: linear-gradient(135deg, var(--sky-100), var(--sky-200));
+      border-radius: calc(var(--radius) + 10px);
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    /* Section styles */
+    section {
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 60px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: var(--sky-100);
+      color: var(--sky-700);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+
+    .section-header h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--slate-900);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-header p {
+      color: var(--slate-500);
+      font-size: 1.05rem;
+    }
+
+    /* About */
+    .about {
+      background: var(--white);
+    }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-card {
+      background: var(--sky-50);
+      border: 1px solid var(--sky-100);
+      border-radius: var(--radius);
+      padding: 36px;
+    }
+
+    .about-card h3 {
+      font-size: 1.4rem;
+      color: var(--slate-900);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .about-card h3 .icon {
+      width: 36px;
+      height: 36px;
+      background: var(--white);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sky-600);
+      box-shadow: var(--shadow);
+      font-size: 1.1rem;
+    }
+
+    .about-text p {
+      color: var(--slate-600);
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .education-item {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--slate-100);
+    }
+
+    .education-item:last-child {
+      border-bottom: none;
+    }
+
+    .education-item h4 {
+      font-size: 1.1rem;
+      color: var(--slate-900);
+      margin-bottom: 6px;
+    }
+
+    .education-item p {
+      color: var(--slate-500);
+      font-size: 0.95rem;
+    }
+
+    .education-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: var(--slate-400);
+    }
+
+    /* Strengths */
+    .strengths-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .strength-card {
+      background: var(--white);
+      border: 1px solid var(--sky-100);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      text-align: center;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+    }
+
+    .strength-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--sky-200);
+    }
+
+    .strength-icon {
+      width: 56px;
+      height: 56px;
+      background: var(--sky-50);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: var(--sky-600);
+      font-size: 1.5rem;
+    }
+
+    .strength-card h3 {
+      font-size: 1.1rem;
+      color: var(--slate-900);
+      margin-bottom: 12px;
+    }
+
+    .strength-card p {
+      font-size: 0.9rem;
+      color: var(--slate-500);
+      line-height: 1.6;
+    }
+
+    /* Experience */
+    .experience {
+      background: var(--white);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 24px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, var(--sky-300), var(--sky-100));
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 72px;
+      padding-bottom: 48px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: 12px;
+      top: 4px;
+      width: 24px;
+      height: 24px;
+      background: var(--white);
+      border: 4px solid var(--sky-500);
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px var(--sky-100);
+    }
+
+    .timeline-content {
+      background: var(--sky-50);
+      border: 1px solid var(--sky-100);
+      border-radius: var(--radius);
+      padding: 28px;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .timeline-header h3 {
+      font-size: 1.2rem;
+      color: var(--slate-900);
+    }
+
+    .timeline-header span {
+      font-size: 0.85rem;
+      color: var(--sky-700);
+      background: var(--sky-100);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .timeline-role {
+      color: var(--sky-600);
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .timeline-list {
+      list-style: none;
+    }
+
+    .timeline-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 10px;
+      color: var(--slate-600);
+      font-size: 0.95rem;
+    }
+
+    .timeline-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      background: var(--sky-400);
+      border-radius: 50%;
+    }
+
+    .timeline-list li strong {
+      color: var(--sky-700);
+      font-weight: 600;
+    }
+
+    .featured-experience .timeline-content {
+      background: linear-gradient(135deg, var(--sky-50), var(--white));
+      border: 2px solid var(--sky-300);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .featured-experience .timeline-dot {
+      border-color: var(--sky-600);
+      box-shadow: 0 0 0 4px var(--sky-200);
+    }
+
+    /* Stats */
+    .stats {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--sky-500), var(--sky-600));
+      color: var(--white);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .stat-item p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    /* Featured Project */
+    .featured {
+      background: var(--white);
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .featured-card {
+      background: linear-gradient(180deg, var(--sky-50), var(--white));
+      border: 1px solid var(--sky-100);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+    }
+
+    .featured-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--sky-200);
+    }
+
+    .featured-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--white);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      font-size: 1.4rem;
+      box-shadow: var(--shadow);
+    }
+
+    .featured-card h3 {
+      font-size: 1.1rem;
+      color: var(--slate-900);
+      margin-bottom: 12px;
+    }
+
+    .featured-card p {
+      font-size: 0.9rem;
+      color: var(--slate-500);
+      line-height: 1.65;
+      margin-bottom: 18px;
+    }
+
+    .featured-data {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .featured-data span {
+      background: var(--white);
+      color: var(--slate-600);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      border: 1px solid var(--sky-100);
+    }
+
+    .featured-data strong {
+      color: var(--sky-700);
+      margin-right: 4px;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .skill-category {
+      background: var(--white);
+      border: 1px solid var(--sky-100);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .skill-category h3 {
+      font-size: 1.1rem;
+      color: var(--slate-900);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .skill-category h3 .dot {
+      width: 10px;
+      height: 10px;
+      background: var(--sky-500);
+      border-radius: 50%;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill-tag {
+      background: var(--sky-50);
+      color: var(--slate-700);
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid var(--sky-100);
+      transition: var(--transition);
+    }
+
+    .skill-tag:hover {
+      background: var(--sky-100);
+      color: var(--sky-700);
+      transform: translateY(-2px);
+    }
+
+    /* Portfolio */
+    .portfolio {
+      background: var(--white);
+    }
+
+    .portfolio-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 48px;
+      flex-wrap: wrap;
+    }
+
+    .portfolio-tab {
+      padding: 10px 22px;
+      border-radius: 24px;
+      background: var(--sky-50);
+      color: var(--slate-600);
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid var(--sky-100);
+      transition: var(--transition);
+    }
+
+    .portfolio-tab:hover,
+    .portfolio-tab.active {
+      background: var(--sky-500);
+      color: var(--white);
+      border-color: var(--sky-500);
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .portfolio-card {
+      background: var(--white);
+      border: 1px solid var(--sky-100);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--shadow);
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .portfolio-image {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--slate-100);
+    }
+
+    .portfolio-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .portfolio-card:hover .portfolio-image img {
+      transform: scale(1.05);
+    }
+
+    .portfolio-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--sky-700);
+      padding: 5px 12px;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      backdrop-filter: blur(4px);
+    }
+
+    .portfolio-info {
+      padding: 22px;
+    }
+
+    .portfolio-info h3 {
+      font-size: 1.05rem;
+      color: var(--slate-900);
+      margin-bottom: 8px;
+    }
+
+    .portfolio-info p {
+      font-size: 0.9rem;
+      color: var(--slate-500);
+      line-height: 1.6;
+    }
+
+    .portfolio-stats {
+      display: flex;
+      gap: 16px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--slate-100);
+    }
+
+    .portfolio-stats span {
+      font-size: 0.85rem;
+      color: var(--slate-500);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .portfolio-stats strong {
+      color: var(--sky-700);
+    }
+
+    /* Videos */
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .video-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .video-card img {
+      width: 100%;
+      aspect-ratio: 9/16;
+      object-fit: cover;
+    }
+
+    .video-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.7), transparent 60%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      color: var(--white);
+    }
+
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 56px;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sky-600);
+      font-size: 1.3rem;
+      transition: var(--transition);
+    }
+
+    .video-card:hover .play-btn {
+      background: var(--sky-500);
+      color: var(--white);
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    .video-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .video-meta {
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    /* Contact */
+    .contact {
+      background: var(--white);
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .contact-info {
+      background: linear-gradient(135deg, var(--sky-500), var(--sky-600));
+      border-radius: var(--radius);
+      padding: 48px;
+      color: var(--white);
+    }
+
+    .contact-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+
+    .contact-info > p {
+      opacity: 0.9;
+      margin-bottom: 32px;
+      font-size: 1rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-item h4 {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-bottom: 4px;
+      font-weight: 400;
+    }
+
+    .contact-item p {
+      font-size: 1.05rem;
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-actions .btn {
+      justify-content: center;
+      width: 100%;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--slate-900);
+      color: var(--slate-400);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin-bottom: 8px;
+    }
+
+    /* Loading state */
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: var(--slate-500);
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      .hero-image img {
+        max-width: 320px;
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .strengths-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .skills-grid,
+      .portfolio-grid,
+      .videos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .featured-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 24px;
+        gap: 20px;
+        border-bottom: 1px solid var(--sky-100);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: flex;
+      }
+
+      .hero {
+        padding: 130px 0 70px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-title {
+        font-size: 1.1rem;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .section-header h2 {
+        font-size: 1.8rem;
+      }
+
+      .strengths-grid,
+      .skills-grid,
+      .portfolio-grid,
+      .videos-grid,
+      .stats-grid,
+      .contact-inner,
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline::before {
+        left: 12px;
+      }
+
+      .timeline-item {
+        padding-left: 44px;
+      }
+
+      .timeline-dot {
+        left: 0;
+        width: 24px;
+        height: 24px;
+      }
+
+      .timeline-header {
+        flex-direction: column;
+      }
+
+      .stat-item h3 {
+        font-size: 2.2rem;
+      }
+
+      .contact-info {
+        padding: 32px;
+      }
+    }
+
+    /* Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .stagger-1 { transition-delay: 0.1s; }
+    .stagger-2 { transition-delay: 0.2s; }
+    .stagger-3 { transition-delay: 0.3s; }
+    .stagger-4 { transition-delay: 0.4s; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">郭殿琨</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">关于我</a>
+        <a href="#experience">工作经历</a>
+        <a href="#featured">重点项目</a>
+        <a href="#portfolio">作品案例</a>
+        <a href="#videos">视频作品</a>
+        <a href="#skills">技能工具</a>
+        <a href="#contact" class="nav-cta">联系我</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" id="heroBadge">加载中…</div>
+        <h1>你好，我是<span id="heroName">郭殿琨</span></h1>
+        <p class="hero-title" id="heroTitle">加载中…</p>
+        <p class="hero-desc" id="heroDesc">加载中…</p>
+        <div class="hero-buttons" id="heroButtons"></div>
+      </div>
+      <div class="hero-image fade-in">
+        <img src="images/profile.png" alt="郭殿琨个人照片" id="heroImage">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">About Me</span>
+        <h2>关于我</h2>
+        <p>内容运营不仅是一份工作，更是把信息、情感与价值精准传递给目标用户的过程。</p>
+      </div>
+      <div class="about-inner" id="aboutInner">
+        <div class="loading">加载中…</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strengths -->
+  <section id="strengths">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Core Strengths</span>
+        <h2>核心优势</h2>
+        <p>覆盖内容策略、生产创意、运营增长与项目协作的全链路能力</p>
+      </div>
+      <div class="strengths-grid" id="strengthsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Experience</span>
+        <h2>工作经历</h2>
+        <p>从海外房产到留学服务，积累多赛道内容运营与增长实战经验</p>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid" id="statsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section id="featured" class="featured">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag" id="featuredTag">Featured Project</span>
+        <h2 id="featuredTitle">加载中…</h2>
+        <p id="featuredSubtitle">加载中…</p>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Skills & Tools</span>
+        <h2>技能与工具</h2>
+        <p>覆盖内容生产、视觉设计、数据分析与多语言能力的工具矩阵</p>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Portfolio</span>
+        <h2>作品案例</h2>
+        <p>账号运营、爆款内容与社交传播的多维度实践</p>
+      </div>
+      <div class="portfolio-tabs fade-in" id="portfolioTabs"></div>
+      <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section id="videos">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Video Works</span>
+        <h2>视频作品</h2>
+        <p>短视频脚本、口播内容与热点二创的实操案例</p>
+      </div>
+      <div class="videos-grid" id="videosGrid"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-tag">Contact</span>
+        <h2>联系我</h2>
+        <p>期待与你交流内容运营、新媒体策划或 PR 传播相关的机会</p>
+      </div>
+      <div class="contact-inner fade-in" id="contactInner"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 郭殿琨 · 内容运营 & 新媒体策划</p>
+      <p>用内容连接品牌与用户</p>
+    </div>
+  </footer>
+
+  <script>
+    // Utility: escape HTML to prevent XSS
+    function escapeHtml(str) {
+      if (typeof str !== 'string') return str;
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Utility: render bullet with optional bold prefix (e.g. "账号运营：...")
+    function renderBullet(text) {
+      const escaped = escapeHtml(text);
+      const match = escaped.match(/^([^：:]+[：:])/);
+      if (match) {
+        const prefix = match[1];
+        const rest = escaped.slice(prefix.length);
+        return `<li><strong>${prefix}</strong>${rest}</li>`;
+      }
+      return `<li>${escaped}</li>`;
+    }
+
+    // Load all content JSON files
+    async function loadContent() {
+      const files = [
+        'profile', 'about', 'strengths', 'experience', 'stats',
+        'featured', 'skills', 'portfolio', 'videos', 'contact'
+      ];
+      const results = {};
+      await Promise.all(files.map(async (name) => {
+        const res = await fetch(`content/${name}.json`);
+        if (!res.ok) throw new Error(`Failed to load ${name}.json: ${res.status}`);
+        results[name] = await res.json();
+      }));
+      return results;
+    }
+
+    function renderHero(profile) {
+      document.getElementById('heroBadge').textContent = profile.badge;
+      document.getElementById('heroName').textContent = profile.name;
+      document.title = `${profile.name} | 内容运营 & 新媒体策划`;
+      document.getElementById('heroTitle').textContent = profile.title;
+      document.getElementById('heroDesc').textContent = profile.description;
+      document.getElementById('heroImage').src = profile.profileImage;
+      document.getElementById('heroImage').alt = `${profile.name}个人照片`;
+
+      const buttonsHtml = profile.buttons.map((btn, idx) => {
+        const cls = btn.style === 'primary' ? 'btn btn-primary' : 'btn btn-outline';
+        const downloadAttr = btn.download ? ' download' : '';
+        const stagger = idx > 0 ? ` stagger-${Math.min(idx, 3)}` : '';
+        return `<a href="${escapeHtml(btn.url)}" class="${cls}${stagger}"${downloadAttr}>${escapeHtml(btn.label)}</a>`;
+      }).join('');
+      document.getElementById('heroButtons').innerHTML = buttonsHtml;
+    }
+
+    function renderAbout(about) {
+      const introHtml = about.intro.map(p => `<p>${escapeHtml(p)}</p>`).join('');
+      const educationHtml = about.education.map((edu, idx) => `
+        <div class="education-item fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}">
+          <h4>${escapeHtml(edu.school)}</h4>
+          <p>${escapeHtml(edu.degree)}</p>
+          <div class="education-meta">
+            <span>${escapeHtml(edu.location)}</span>
+            <span>${escapeHtml(edu.date)}</span>
+          </div>
+        </div>
+      `).join('');
+
+      document.getElementById('aboutInner').innerHTML = `
+        <div class="about-card fade-in">
+          <h3><span class="icon">📝</span>自我介绍</h3>
+          <div class="about-text">${introHtml}</div>
+        </div>
+        <div class="about-card fade-in stagger-1">
+          <h3><span class="icon">🎓</span>教育背景</h3>
+          ${educationHtml}
+        </div>
+      `;
+    }
+
+    function renderStrengths(strengths) {
+      const html = strengths.cards.map((card, idx) => `
+        <div class="strength-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}">
+          <div class="strength-icon">${card.icon}</div>
+          <h3>${escapeHtml(card.title)}</h3>
+          <p>${escapeHtml(card.description)}</p>
+        </div>
+      `).join('');
+      document.getElementById('strengthsGrid').innerHTML = html;
+    }
+
+    function renderExperience(experience) {
+      const html = experience.jobs.map((job, idx) => {
+        const featuredClass = job.featured ? 'featured-experience' : '';
+        const bulletsHtml = job.bullets.map(renderBullet).join('');
+        return `
+          <div class="timeline-item fade-in ${featuredClass} ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>${escapeHtml(job.company)}</h3>
+                <span>${escapeHtml(job.date)}</span>
+              </div>
+              <span class="timeline-role">${escapeHtml(job.role)}</span>
+              <ul class="timeline-list">${bulletsHtml}</ul>
+            </div>
+          </div>
+        `;
+      }).join('');
+      document.getElementById('experienceTimeline').innerHTML = html;
+    }
+
+    function renderStats(stats) {
+      const html = stats.items.map((item, idx) => `
+        <div class="stat-item fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}">
+          <h3>${escapeHtml(item.value)}</h3>
+          <p>${escapeHtml(item.label)}</p>
+        </div>
+      `).join('');
+      document.getElementById('statsGrid').innerHTML = html;
+    }
+
+    function renderFeatured(featured) {
+      document.getElementById('featuredTag').textContent = featured.tag;
+      document.getElementById('featuredTitle').textContent = featured.title;
+      document.getElementById('featuredSubtitle').textContent = featured.subtitle;
+
+      const html = featured.cards.map((card, idx) => {
+        const dataHtml = card.data.map(d => `
+          <span><strong>${escapeHtml(d.value)}</strong>${escapeHtml(d.label)}</span>
+        `).join('');
+        return `
+          <div class="featured-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}">
+            <div class="featured-icon">${card.icon}</div>
+            <h3>${escapeHtml(card.title)}</h3>
+            <p>${escapeHtml(card.description)}</p>
+            <div class="featured-data">${dataHtml}</div>
+          </div>
+        `;
+      }).join('');
+      document.getElementById('featuredGrid').innerHTML = html;
+    }
+
+    function renderSkills(skills) {
+      const html = skills.categories.map((cat, idx) => {
+        const tagsHtml = cat.tags.map(tag => `<span class="skill-tag">${escapeHtml(tag)}</span>`).join('');
+        return `
+          <div class="skill-category fade-in ${idx > 0 ? 'stagger-' + Math.min(idx % 3, 3) : ''}">
+            <h3><span class="dot"></span>${escapeHtml(cat.title)}</h3>
+            <div class="skill-tags">${tagsHtml}</div>
+          </div>
+        `;
+      }).join('');
+      document.getElementById('skillsGrid').innerHTML = html;
+    }
+
+    function renderPortfolio(portfolio) {
+      const tabsHtml = portfolio.tabs.map((tab, idx) => `
+        <button class="portfolio-tab ${idx === 0 ? 'active' : ''}" data-filter="${escapeHtml(tab.id)}">${escapeHtml(tab.label)}</button>
+      `).join('');
+      document.getElementById('portfolioTabs').innerHTML = tabsHtml;
+
+      const cardsHtml = portfolio.items.map((item, idx) => {
+        const statsHtml = item.stats.map(s => `
+          <span><strong>${escapeHtml(s.value)}</strong> ${escapeHtml(s.label)}</span>
+        `).join('');
+        return `
+          <div class="portfolio-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx % 3, 3) : ''}" data-category="${escapeHtml(item.category)}">
+            <div class="portfolio-image">
+              <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}">
+              <span class="portfolio-badge">${escapeHtml(item.badge)}</span>
+            </div>
+            <div class="portfolio-info">
+              <h3>${escapeHtml(item.title)}</h3>
+              <p>${escapeHtml(item.description)}</p>
+              <div class="portfolio-stats">${statsHtml}</div>
+            </div>
+          </div>
+        `;
+      }).join('');
+      document.getElementById('portfolioGrid').innerHTML = cardsHtml;
+
+      // Re-bind portfolio filtering
+      bindPortfolioFilter();
+    }
+
+    function renderVideos(videos) {
+      const html = videos.items.map((video, idx) => `
+        <div class="video-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}">
+          <img src="${escapeHtml(video.image)}" alt="${escapeHtml(video.title)}">
+          <div class="play-btn">▶</div>
+          <div class="video-overlay">
+            <div class="video-title">${escapeHtml(video.title)}</div>
+            <div class="video-meta">${escapeHtml(video.meta)}</div>
+          </div>
+        </div>
+      `).join('');
+      document.getElementById('videosGrid').innerHTML = html;
+
+      // Re-bind video click
+      document.querySelectorAll('.video-card').forEach(card => {
+        card.addEventListener('click', () => {
+          alert('视频作品为案例展示，如需观看原片请联系我：guodiankun88@163.com');
+        });
+      });
+    }
+
+    function renderContact(contact) {
+      const itemsHtml = contact.items.map(item => `
+        <div class="contact-item">
+          <div class="contact-icon">${item.icon}</div>
+          <div>
+            <h4>${escapeHtml(item.label)}</h4>
+            <p>${escapeHtml(item.value)}</p>
+          </div>
+        </div>
+      `).join('');
+
+      const actionsHtml = contact.actions.map((action, idx) => {
+        const cls = action.style === 'primary' ? 'btn btn-primary' : 'btn btn-outline';
+        const downloadAttr = action.download ? ' download' : '';
+        return `<a href="${escapeHtml(action.url)}" class="${cls}"${downloadAttr}>${escapeHtml(action.label)}</a>`;
+      }).join('');
+
+      document.getElementById('contactInner').innerHTML = `
+        <div class="contact-info">
+          <h3>${escapeHtml(contact.title)}</h3>
+          <p>${escapeHtml(contact.subtitle)}</p>
+          ${itemsHtml}
+        </div>
+        <div class="contact-actions">
+          ${actionsHtml}
+        </div>
+      `;
+    }
+
+    function bindPortfolioFilter() {
+      const tabs = document.querySelectorAll('.portfolio-tab');
+      const cards = document.querySelectorAll('.portfolio-card');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+
+          const filter = tab.getAttribute('data-filter');
+          cards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, 50);
+            } else {
+              card.style.opacity = '0';
+              card.style.transform = 'translateY(20px)';
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+    }
+
+    function initInteractions() {
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+
+      // Active nav link on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navItems = document.querySelectorAll('.nav-links a[href^="#"]');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          if (scrollY >= sectionTop - 200) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navItems.forEach(item => {
+          item.classList.remove('active');
+          if (item.getAttribute('href') === '#' + current) {
+            item.classList.add('active');
+          }
+        });
+
+        const nav = document.getElementById('nav');
+        if (scrollY > 50) {
+          nav.style.boxShadow = '0 1px 3px rgba(14, 165, 233, 0.1)';
+        } else {
+          nav.style.boxShadow = 'none';
+        }
+      });
+
+      // Fade in animation on scroll
+      bindFadeIn();
+    }
+
+    function bindFadeIn() {
+      const fadeElements = document.querySelectorAll('.fade-in');
+      const fadeObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+
+      fadeElements.forEach(el => fadeObserver.observe(el));
+    }
+
+    async function init() {
+      try {
+        const data = await loadContent();
+        renderHero(data.profile);
+        renderAbout(data.about);
+        renderStrengths(data.strengths);
+        renderExperience(data.experience);
+        renderStats(data.stats);
+        renderFeatured(data.featured);
+        renderSkills(data.skills);
+        renderPortfolio(data.portfolio);
+        renderVideos(data.videos);
+        renderContact(data.contact);
+
+        initInteractions();
+      } catch (err) {
+        console.error('Failed to load content:', err);
+        document.body.insertAdjacentHTML('afterbegin', `
+          <div style="background:#fee2e2;color:#991b1b;padding:16px;text-align:center;">
+            内容加载失败，请检查 content/ 目录下的 JSON 文件是否正确放置。
+          </div>
+        `);
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

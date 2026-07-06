@@ -1,0 +1,25 @@
+{
+  "badge": "求职方向：内容运营 · 新媒体策划 · PR传播",
+  "name": "郭殿琨",
+  "title": "用内容连接品牌与用户，从 0 到 1 让账号实现增长与转化",
+  "description": "香港浸会大学当代中国研究硕士，兼具社会工作学科背景与海外房产、留学、文旅等多赛道实战经验。擅长多平台矩阵运营、爆款内容策划、KOL投放与数据复盘，能将复杂信息转化为用户愿意阅读与传播的内容。",
+  "profileImage": "images/profile.png",
+  "buttons": [
+    {
+      "label": "查看作品案例",
+      "url": "#portfolio",
+      "style": "primary"
+    },
+    {
+      "label": "下载简历",
+      "url": "郭殿琨_简历.docx",
+      "style": "outline",
+      "download": true
+    },
+    {
+      "label": "联系我",
+      "url": "#contact",
+      "style": "outline"
+    }
+  ]
+}

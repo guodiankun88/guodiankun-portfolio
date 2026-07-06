@@ -1,0 +1,39 @@
+{
+  "title": "郭殿琨",
+  "subtitle": "内容运营 · 新媒体策划 · PR传播方向",
+  "items": [
+    {
+      "icon": "✉",
+      "label": "邮箱",
+      "value": "guodiankun88@163.com"
+    },
+    {
+      "icon": "📞",
+      "label": "电话",
+      "value": "+86 19860076678"
+    },
+    {
+      "icon": "💬",
+      "label": "微信",
+      "value": "a1072743449"
+    }
+  ],
+  "actions": [
+    {
+      "label": "发送邮件",
+      "url": "mailto:guodiankun88@163.com",
+      "style": "primary"
+    },
+    {
+      "label": "下载简历（DOCX）",
+      "url": "郭殿琨_简历.docx",
+      "style": "outline",
+      "download": true
+    },
+    {
+      "label": "拨打电话",
+      "url": "tel:+8619860076678",
+      "style": "outline"
+    }
+  ]
+}
