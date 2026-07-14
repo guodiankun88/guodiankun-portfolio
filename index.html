@@ -1430,6 +1430,10 @@
   </footer>
 
   <script>
+    // Cache-busting version - update this when images change
+    const CACHE_V = 'v20260715c';
+    function cacheBust(url) { return url + '?' + CACHE_V; }
+
     // Utility: escape HTML to prevent XSS
     function escapeHtml(str) {
       if (typeof str !== 'string') return str;
@@ -1461,7 +1465,7 @@
       ];
       const results = {};
       await Promise.all(files.map(async (name) => {
-        const res = await fetch(`content/${name}.json`);
+        const res = await fetch(`content/${name}.json?v=${Date.now()}`);
         if (!res.ok) throw new Error(`Failed to load ${name}.json: ${res.status}`);
         results[name] = await res.json();
       }));
@@ -1474,7 +1478,7 @@
       document.title = `${profile.name} | 内容运营 & 新媒体策划`;
       document.getElementById('heroTitle').textContent = profile.title;
       document.getElementById('heroDesc').textContent = profile.description;
-      document.getElementById('heroImage').src = profile.profileImage;
+      document.getElementById('heroImage').src = cacheBust(profile.profileImage);
       document.getElementById('heroImage').alt = `${profile.name}个人照片`;
 
       const buttonsHtml = profile.buttons.map((btn, idx) => {
@@ -1645,7 +1649,7 @@
         return `
           <div class="portfolio-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx % 3, 3) : ''}" data-category="${escapeHtml(item.category)}">
             <div class="portfolio-image">
-              <img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.title)}">
+              <img src="${cacheBust(escapeHtml(item.image))}" alt="${escapeHtml(item.title)}">
               <span class="portfolio-badge">${escapeHtml(item.badge)}</span>
             </div>
             <div class="portfolio-info">
@@ -1670,7 +1674,7 @@
         const linkAttrs = hasUrl ? ` href="${escapeHtml(video.url)}" target="_blank" rel="noopener"` : '';
         return `
           <${tag} class="video-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}"${linkAttrs}>
-            <img src="${escapeHtml(video.image)}" alt="${escapeHtml(video.title)}">
+            <img src="${cacheBust(escapeHtml(video.image))}" alt="${escapeHtml(video.title)}">
             <div class="play-btn">▶</div>
             <div class="video-overlay">
               <div class="video-title">${escapeHtml(video.title)}</div>
