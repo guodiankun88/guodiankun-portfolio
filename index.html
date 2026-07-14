@@ -635,71 +635,67 @@
       background: var(--white);
     }
 
-    .featured-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
+    .project-group {
+      margin-bottom: 48px;
     }
 
-    .featured-card {
-      background: linear-gradient(180deg, var(--sky-50), var(--white));
-      border: 1px solid var(--sky-100);
-      border-radius: var(--radius);
-      padding: 32px 24px;
-      transition: var(--transition);
-      box-shadow: var(--shadow);
+    .project-group:last-child {
+      margin-bottom: 0;
     }
 
-    .featured-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-      border-color: var(--sky-200);
-    }
-
-    .featured-icon {
-      width: 52px;
-      height: 52px;
-      background: var(--white);
-      border-radius: 14px;
+    .project-header {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-      font-size: 1.4rem;
-      box-shadow: var(--shadow);
-    }
-
-    .featured-card h3 {
-      font-size: 1.1rem;
-      color: var(--slate-900);
-      margin-bottom: 12px;
-    }
-
-    .featured-card p {
-      font-size: 0.9rem;
-      color: var(--slate-500);
-      line-height: 1.65;
-      margin-bottom: 18px;
-    }
-
-    .featured-data {
-      display: flex;
-      gap: 12px;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 24px;
       flex-wrap: wrap;
     }
 
-    .featured-data span {
-      background: var(--white);
-      color: var(--slate-600);
-      padding: 6px 12px;
-      border-radius: 8px;
-      font-size: 0.8rem;
-      border: 1px solid var(--sky-100);
+    .project-name {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--slate-900);
     }
 
-    .featured-data strong {
-      color: var(--sky-700);
-      margin-right: 4px;
+    .project-role {
+      font-size: 0.9rem;
+      color: var(--slate-500);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .metric-item {
+      background: var(--sky-50);
+      border: 1px solid var(--sky-100);
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .metric-item:hover {
+      border-color: var(--sky-300);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .metric-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--sky-600);
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .metric-label {
+      font-size: 0.8rem;
+      color: var(--slate-500);
+      white-space: nowrap;
     }
 
     /* Skills */
@@ -1090,8 +1086,8 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .featured-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .metrics-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
@@ -1143,9 +1139,12 @@
       .portfolio-grid,
       .videos-grid,
       .stats-grid,
-      .contact-inner,
-      .featured-grid {
+      .contact-inner {
         grid-template-columns: 1fr;
+      }
+
+      .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .timeline::before {
@@ -1475,6 +1474,30 @@
       document.getElementById('featuredTitle').textContent = featured.title;
       document.getElementById('featuredSubtitle').textContent = featured.subtitle;
 
+      // Support new multi-project data view
+      if (featured.projects) {
+        const html = featured.projects.map((project, pIdx) => {
+          const metricsHtml = project.metrics.map(m => `
+            <div class="metric-item">
+              <div class="metric-value">${escapeHtml(m.value)}</div>
+              <div class="metric-label">${escapeHtml(m.label)}</div>
+            </div>
+          `).join('');
+          return `
+            <div class="project-group fade-in ${pIdx > 0 ? 'stagger-' + Math.min(pIdx, 3) : ''}">
+              <div class="project-header">
+                <span class="project-name">${escapeHtml(project.name)}</span>
+                <span class="project-role">${escapeHtml(project.role)}</span>
+              </div>
+              <div class="metrics-grid">${metricsHtml}</div>
+            </div>
+          `;
+        }).join('');
+        document.getElementById('featuredGrid').innerHTML = html;
+        return;
+      }
+
+      // Fallback: old card structure
       const html = featured.cards.map((card, idx) => {
         const dataHtml = card.data.map(d => `
           <span><strong>${escapeHtml(d.value)}</strong>${escapeHtml(d.label)}</span>

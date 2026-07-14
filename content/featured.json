@@ -1,42 +1,32 @@
 {
-  "tag": "Featured Project",
-  "title": "重点项目：谷雨618投放",
-  "subtitle": "品牌Q3季度投放核心成果——精细化达人矩阵投放，超额达成目标",
-  "cards": [
+  "tag": "Featured Projects",
+  "title": "重点项目数据",
+  "subtitle": "核心项目关键成果一览",
+  "projects": [
     {
-      "icon": "👥",
-      "title": "达人矩阵投放",
-      "description": "管理250+达人库，头部达人2.37%、中腰部达人57.71%、KOC 39.92%，精细化分层实现高效覆盖。",
-      "data": [
-        { "value": "1.5亿+", "label": "总曝光量" },
-        { "value": "43万+", "label": "总互动" }
-      ]
-    },
-    {
-      "icon": "📈",
-      "title": "ROI与转化",
-      "description": "独立负责新品线推广策划，ROI环比提升68%，KPI达成率120%，超额完成季度目标。",
-      "data": [
-        { "value": "4.71", "label": "ROI" },
-        { "value": "120%", "label": "KPI达成率" }
-      ]
-    },
-    {
-      "icon": "✍",
-      "title": "内容与爆文",
-      "description": "统筹27篇内容产出与308万预算，爆文率环比提升40%，精准匹配护肤场景与产品卖点。",
-      "data": [
-        { "value": "41%", "label": "爆文率" },
-        { "value": "27篇", "label": "内容发布" }
-      ]
-    },
-    {
-      "icon": "💰",
-      "title": "销售与直播",
-      "description": "季度销售额1266万，直播销售162万，媒体价值EVA达1827.48万，投流CPC仅2.70。",
-      "data": [
+      "name": "谷雨 · 618品牌投放",
+      "role": "媒介投放 · 护肤快消 · 2026 Q3",
+      "metrics": [
+        { "value": "1.5亿+", "label": "总曝光" },
+        { "value": "4.71", "label": "ROI ↑68%" },
+        { "value": "41%", "label": "爆文率 ↑40%" },
+        { "value": "120%", "label": "KPI达成" },
+        { "value": "43万+", "label": "总互动 ↑23%" },
+        { "value": "27篇", "label": "内容产出" },
+        { "value": "308万", "label": "季度预算" },
         { "value": "1266万", "label": "季度销售额" },
-        { "value": "162万", "label": "直播销售" }
+        { "value": "162万", "label": "直播销售" },
+        { "value": "250+", "label": "达人库" }
+      ]
+    },
+    {
+      "name": "英寰 · 海外房产运营",
+      "role": "新媒体运营 · 海外房产 · 2024.12 - 2026.01",
+      "metrics": [
+        { "value": "9000+", "label": "单账号涨粉" },
+        { "value": "70+", "label": "月均线索" },
+        { "value": "20场+", "label": "线下活动" },
+        { "value": "130W+", "label": "单日直播GMV" }
       ]
     }
   ]
