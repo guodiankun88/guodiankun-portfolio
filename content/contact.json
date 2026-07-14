@@ -26,7 +26,13 @@
     },
     {
       "label": "下载简历（DOCX）",
-      "url": "郭殿琨_简历.docx",
+      "url": "downloads/郭殿琨_简历.docx",
+      "style": "outline",
+      "download": true
+    },
+    {
+      "label": "下载作品集（PPTX）",
+      "url": "downloads/内容运营作品集26.7.15.pptx",
       "style": "outline",
       "download": true
     },

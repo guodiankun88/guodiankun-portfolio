@@ -2,16 +2,15 @@ backend:
   name: github
   repo: guodiankun88/guodiankun-portfolio
   branch: main
-  base_url: https://your-oauth-proxy-url.vercel.app
-  auth_endpoint: oauth
+  base_url: https://guodiankun-portfolio-oauth.vercel.app
 
 # 图片上传位置
 media_folder: "images"
 public_folder: "images"
 
 # 站点基础信息
-site_url: https://guodiankun88.github.io/guodiankun-portfolio
-logo_url: https://guodiankun88.github.io/guodiankun-portfolio/images/profile.png
+site_url: https://guodiankun-portfolio-cms.vercel.app
+logo_url: https://guodiankun-portfolio-cms.vercel.app/images/profile.png
 
 # 中文界面
 locale: zh_Hans
@@ -169,6 +168,7 @@ collections:
             fields:
               - { label: "标题", name: "title", widget: "string" }
               - { label: "元信息", name: "meta", widget: "string" }
+              - { label: "视频链接", name: "url", widget: "string", required: false, hint: "填写后点击卡片会跳转到该链接" }
               - { label: "封面图", name: "image", widget: "image" }
 
       - file: "content/contact.json"

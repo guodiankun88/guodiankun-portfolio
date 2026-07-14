@@ -881,12 +881,15 @@
     }
 
     .video-card {
+      display: block;
       position: relative;
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
       cursor: pointer;
       transition: var(--transition);
+      text-decoration: none;
+      color: inherit;
     }
 
     .video-card:hover {
@@ -1532,20 +1535,25 @@
     }
 
     function renderVideos(videos) {
-      const html = videos.items.map((video, idx) => `
-        <div class="video-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}">
-          <img src="${escapeHtml(video.image)}" alt="${escapeHtml(video.title)}">
-          <div class="play-btn">▶</div>
-          <div class="video-overlay">
-            <div class="video-title">${escapeHtml(video.title)}</div>
-            <div class="video-meta">${escapeHtml(video.meta)}</div>
-          </div>
-        </div>
-      `).join('');
+      const html = videos.items.map((video, idx) => {
+        const hasUrl = video.url && video.url.trim();
+        const tag = hasUrl ? 'a' : 'div';
+        const linkAttrs = hasUrl ? ` href="${escapeHtml(video.url)}" target="_blank" rel="noopener"` : '';
+        return `
+          <${tag} class="video-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx, 3) : ''}"${linkAttrs}>
+            <img src="${escapeHtml(video.image)}" alt="${escapeHtml(video.title)}">
+            <div class="play-btn">▶</div>
+            <div class="video-overlay">
+              <div class="video-title">${escapeHtml(video.title)}</div>
+              <div class="video-meta">${escapeHtml(video.meta)}</div>
+            </div>
+          </${tag}>
+        `;
+      }).join('');
       document.getElementById('videosGrid').innerHTML = html;
 
-      // Re-bind video click
-      document.querySelectorAll('.video-card').forEach(card => {
+      // Only bind alert to cards without external links
+      document.querySelectorAll('.video-card:not([href])').forEach(card => {
         card.addEventListener('click', () => {
           alert('视频作品为案例展示，如需观看原片请联系我：guodiankun88@163.com');
         });
