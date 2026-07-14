@@ -613,10 +613,16 @@
     }
 
     .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px 40px;
       text-align: center;
+    }
+
+    .stat-item {
+      flex: 0 0 auto;
+      min-width: 120px;
     }
 
     .stat-item h3 {
