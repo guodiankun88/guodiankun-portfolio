@@ -89,9 +89,23 @@
       ]
     },
     {
-      "title": "谷雨细胞密素次抛 · 王开花脚本",
+      "title": "暖心老金 · 山参套组脚本",
+      "description": "谷雨山参套组产品脚本，结合达人人设与产品卖点，打造真实种草内容。",
+      "image": "images/content-skincare-1.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "谷雨", "label": "品牌" },
+        { "value": "山参套组", "label": "产品" }
+      ],
+      "scripts": [
+        { "label": "查看脚本", "url": "https://www.kdocs.cn/l/ch2aPXyM2kHN", "type": "link" }
+      ]
+    },
+    {
+      "title": "刘珍珠珍珠 · 细胞密素次抛脚本",
       "description": "谷雨细胞密素次抛产品脚本，结合达人人设与产品卖点，打造真实种草内容。",
-      "image": "images/content-skincare-3.png",
+      "image": "images/content-skincare-2.png",
       "category": "content",
       "badge": "护肤脚本",
       "stats": [
@@ -99,21 +113,35 @@
         { "value": "细胞密素", "label": "产品" }
       ],
       "scripts": [
-        { "label": "脚本 V6 改稿", "url": "downloads/scripts/guyu-cell-script-v6.html", "type": "doc" }
+        { "label": "查看脚本", "url": "https://www.kdocs.cn/l/cpPdSnWVjM17", "type": "link" }
       ]
     },
     {
-      "title": "谷雨外泌素次抛 · 王开花脚本",
-      "description": "谷雨外泌素次抛产品脚本，结合达人人设与产品卖点，打造真实种草内容。",
+      "title": "ohmylady 花花呀 · 山参套组脚本",
+      "description": "谷雨山参套组产品脚本，结合达人人设与产品卖点，打造真实种草内容。",
+      "image": "images/content-skincare-3.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "谷雨", "label": "品牌" },
+        { "value": "山参套组", "label": "产品" }
+      ],
+      "scripts": [
+        { "label": "查看脚本", "url": "https://www.kdocs.cn/l/cmhdtvPMcqIX", "type": "link" }
+      ]
+    },
+    {
+      "title": "雷雷酱 · 谷雨山参水乳霜脚本",
+      "description": "谷雨山参水乳霜产品脚本，结合达人人设与产品卖点，打造真实种草内容。",
       "image": "images/content-skincare-4.png",
       "category": "content",
       "badge": "护肤脚本",
       "stats": [
         { "value": "谷雨", "label": "品牌" },
-        { "value": "外泌素", "label": "产品" }
+        { "value": "山参水乳霜", "label": "产品" }
       ],
       "scripts": [
-        { "label": "脚本修改稿 V2", "url": "downloads/scripts/guyu-exosome-script-v2.html", "type": "doc" }
+        { "label": "查看脚本", "url": "https://www.kdocs.cn/l/cnYZ0JDm88TY", "type": "link" }
       ]
     },
     {
