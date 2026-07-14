@@ -922,6 +922,42 @@
       color: var(--sky-700);
     }
 
+    .portfolio-scripts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--sky-200);
+    }
+
+    .script-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: var(--sky-50);
+      color: var(--sky-700);
+      border: 1px solid var(--sky-200);
+      transition: var(--transition);
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .script-link:hover {
+      background: var(--sky-100);
+      border-color: var(--sky-300);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow);
+    }
+
+    .script-link .link-icon {
+      font-size: 0.75rem;
+    }
+
     /* Videos */
     .videos-grid {
       display: grid;
@@ -1599,6 +1635,13 @@
         const statsHtml = item.stats.map(s => `
           <span><strong>${escapeHtml(s.value)}</strong> ${escapeHtml(s.label)}</span>
         `).join('');
+        const scriptsHtml = item.scripts && item.scripts.length
+          ? `<div class="portfolio-scripts">${item.scripts.map(s => {
+              const isExternal = s.type === 'link' || (s.url && s.url.startsWith('http'));
+              const icon = isExternal ? '<span class="link-icon">🔗</span>' : '<span class="link-icon">📄</span>';
+              return `<a class="script-link" href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${icon}${escapeHtml(s.label)}</a>`;
+            }).join('')}</div>`
+          : '';
         return `
           <div class="portfolio-card fade-in ${idx > 0 ? 'stagger-' + Math.min(idx % 3, 3) : ''}" data-category="${escapeHtml(item.category)}">
             <div class="portfolio-image">
@@ -1609,6 +1652,7 @@
               <h3>${escapeHtml(item.title)}</h3>
               <p>${escapeHtml(item.description)}</p>
               <div class="portfolio-stats">${statsHtml}</div>
+              ${scriptsHtml}
             </div>
           </div>
         `;

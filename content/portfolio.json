@@ -1,21 +1,9 @@
 {
   "tabs": [
-    {
-      "id": "all",
-      "label": "全部"
-    },
-    {
-      "id": "account",
-      "label": "账号运营"
-    },
-    {
-      "id": "content",
-      "label": "爆款内容"
-    },
-    {
-      "id": "social",
-      "label": "海外社媒"
-    }
+    { "id": "all", "label": "全部" },
+    { "id": "account", "label": "账号运营" },
+    { "id": "content", "label": "爆款内容" },
+    { "id": "social", "label": "海外社媒" }
   ],
   "items": [
     {
@@ -25,14 +13,18 @@
       "category": "account",
       "badge": "房产专业号",
       "stats": [
-        {
-          "value": "1.8W",
-          "label": "粉丝"
-        },
-        {
-          "value": "9W",
-          "label": "赞藏"
-        }
+        { "value": "1.8W", "label": "粉丝" },
+        { "value": "9W", "label": "赞藏" }
+      ],
+      "scripts": [
+        { "label": "小红书主页", "url": "https://www.xiaohongshu.com/user/profile/5eb8cb8d0000000001006ae8", "type": "link" },
+        { "label": "Abbey Barn Park 脚本", "url": "downloads/scripts/RT.abbey barn park 25.4.1.html", "type": "doc" },
+        { "label": "Spring Hill 脚本", "url": "downloads/scripts/RT.SPRING HILL.25.5.20.html", "type": "doc" },
+        { "label": "东京湾区房产分析", "url": "downloads/scripts/全球四大湾区之一东京湾区房产投资分析.html", "type": "doc" },
+        { "label": "公众号文章 1", "url": "https://mp.weixin.qq.com/s/NaMOTpA0dNcevYnxllbebQ", "type": "link" },
+        { "label": "公众号文章 2", "url": "https://mp.weixin.qq.com/s/G_pBPkhfTz77wibRAKuPFw", "type": "link" },
+        { "label": "公众号文章 3", "url": "https://mp.weixin.qq.com/s/Hvkhg0WDWIUnlvx4BvuYDA", "type": "link" },
+        { "label": "公众号文章 4", "url": "https://mp.weixin.qq.com/s/170DJieMbJ7X6k6tIq9U0Q", "type": "link" }
       ]
     },
     {
@@ -42,14 +34,13 @@
       "category": "account",
       "badge": "个人 IP 号",
       "stats": [
-        {
-          "value": "9134",
-          "label": "粉丝"
-        },
-        {
-          "value": "16.6W",
-          "label": "赞藏"
-        }
+        { "value": "9134", "label": "粉丝" },
+        { "value": "16.6W", "label": "赞藏" }
+      ],
+      "scripts": [
+        { "label": "小红书主页", "url": "https://www.xiaohongshu.com/user/profile/6041aed60000000001008bea", "type": "link" },
+        { "label": "Southbank Place 脚本", "url": "downloads/scripts/southbank place.html", "type": "doc" },
+        { "label": "The Green Quarter 脚本", "url": "downloads/scripts/The Green Quarter口播脚本.html", "type": "doc" }
       ]
     },
     {
@@ -59,14 +50,12 @@
       "category": "account",
       "badge": "豪宅垂类号",
       "stats": [
-        {
-          "value": "3312",
-          "label": "粉丝"
-        },
-        {
-          "value": "2.4W",
-          "label": "赞藏"
-        }
+        { "value": "3312", "label": "粉丝" },
+        { "value": "2.4W", "label": "赞藏" }
+      ],
+      "scripts": [
+        { "label": "小红书主页", "url": "https://www.xiaohongshu.com/user/profile/6041aed60000000001008bea", "type": "link" },
+        { "label": "豪宅文案", "url": "downloads/scripts/豪宅文案.html", "type": "doc" }
       ]
     },
     {
@@ -76,14 +65,8 @@
       "category": "account",
       "badge": "留学素人号",
       "stats": [
-        {
-          "value": "200+",
-          "label": "粉丝增长"
-        },
-        {
-          "value": "20%+",
-          "label": "转化率"
-        }
+        { "value": "200+", "label": "粉丝增长" },
+        { "value": "20%+", "label": "转化率" }
       ]
     },
     {
@@ -93,14 +76,8 @@
       "category": "content",
       "badge": "热点爆款",
       "stats": [
-        {
-          "value": "454",
-          "label": "点赞"
-        },
-        {
-          "value": "58",
-          "label": "收藏"
-        }
+        { "value": "454", "label": "点赞" },
+        { "value": "58", "label": "收藏" }
       ]
     },
     {
@@ -110,14 +87,8 @@
       "category": "content",
       "badge": "生活选题",
       "stats": [
-        {
-          "value": "217",
-          "label": "点赞"
-        },
-        {
-          "value": "210",
-          "label": "收藏"
-        }
+        { "value": "217", "label": "点赞" },
+        { "value": "210", "label": "收藏" }
       ]
     },
     {
@@ -127,14 +98,8 @@
       "category": "social",
       "badge": "海外社媒",
       "stats": [
-        {
-          "value": "Ins",
-          "label": "内容运营"
-        },
-        {
-          "value": "FB",
-          "label": "活动传播"
-        }
+        { "value": "Ins", "label": "内容运营" },
+        { "value": "FB", "label": "活动传播" }
       ]
     }
   ]
