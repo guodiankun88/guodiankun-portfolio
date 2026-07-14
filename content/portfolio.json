@@ -21,11 +21,7 @@
         { "label": "小红书主页", "url": "https://www.xiaohongshu.com/user/profile/5eb8cb8d0000000001006ae8", "type": "link" },
         { "label": "Abbey Barn Park 脚本", "url": "downloads/scripts/RT.abbey barn park 25.4.1.html", "type": "doc" },
         { "label": "Spring Hill 脚本", "url": "downloads/scripts/RT.SPRING HILL.25.5.20.html", "type": "doc" },
-        { "label": "东京湾区房产分析", "url": "downloads/scripts/全球四大湾区之一东京湾区房产投资分析.html", "type": "doc" },
-        { "label": "公众号文章 1", "url": "https://mp.weixin.qq.com/s/NaMOTpA0dNcevYnxllbebQ", "type": "link" },
-        { "label": "公众号文章 2", "url": "https://mp.weixin.qq.com/s/G_pBPkhfTz77wibRAKuPFw", "type": "link" },
-        { "label": "公众号文章 3", "url": "https://mp.weixin.qq.com/s/Hvkhg0WDWIUnlvx4BvuYDA", "type": "link" },
-        { "label": "公众号文章 4", "url": "https://mp.weixin.qq.com/s/170DJieMbJ7X6k6tIq9U0Q", "type": "link" }
+        { "label": "东京湾区房产分析", "url": "downloads/scripts/全球四大湾区之一东京湾区房产投资分析.html", "type": "doc" }
       ]
     },
     {
@@ -90,61 +86,6 @@
       "stats": [
         { "value": "217", "label": "点赞" },
         { "value": "210", "label": "收藏" }
-      ]
-    },
-    {
-      "title": "护肤口播脚本 · 高效护肤搭子",
-      "description": "护肤垂类口播脚本，结合达人人设与产品卖点，突出使用场景与痛点解决。",
-      "image": "images/content-skincare-3.png",
-      "category": "content",
-      "badge": "护肤脚本",
-      "stats": [
-        { "value": "护肤", "label": "垂类" },
-        { "value": "口播", "label": "形式" }
-      ]
-    },
-    {
-      "title": "护肤口播脚本 · 变美分享",
-      "description": "护肤好物分享脚本，以个人使用体验切入，自然植入产品卖点与搭配建议。",
-      "image": "images/content-skincare-4.png",
-      "category": "content",
-      "badge": "护肤脚本",
-      "stats": [
-        { "value": "护肤", "label": "垂类" },
-        { "value": "种草", "label": "形式" }
-      ]
-    },
-    {
-      "title": "护肤口播脚本 · 达人合作",
-      "description": "护肤垂类达人合作脚本，结合达人人设与产品调性，打造真实种草内容。",
-      "image": "images/content-skincare-1.png",
-      "category": "content",
-      "badge": "护肤脚本",
-      "stats": [
-        { "value": "护肤", "label": "垂类" },
-        { "value": "达人", "label": "合作" }
-      ]
-    },
-    {
-      "title": "护肤口播脚本 · 产品测评",
-      "description": "护肤产品测评脚本，从成分、功效、使用感受等维度进行专业评测。",
-      "image": "images/content-skincare-2.png",
-      "category": "content",
-      "badge": "护肤脚本",
-      "stats": [
-        { "value": "护肤", "label": "垂类" },
-        { "value": "测评", "label": "形式" }
-      ]
-    },
-    {
-      "title": "护肤口播脚本 · 使用场景",
-      "description": "护肤产品使用场景脚本，结合日常生活场景展示产品效果与适用人群。",
-      "image": "images/content-skincare-5.png",
-      "category": "content",
-      "badge": "护肤脚本",
-      "stats": [
-        { "value": "护肤", "label": "垂类" },
-        { "value": "场景", "label": "展示" }
       ]
     },
     {
