@@ -3,7 +3,8 @@
     { "id": "all", "label": "全部" },
     { "id": "account", "label": "账号运营" },
     { "id": "content", "label": "爆款内容" },
-    { "id": "social", "label": "海外社媒" }
+    { "id": "social", "label": "海外社媒" },
+    { "id": "wechat", "label": "公众号" }
   ],
   "items": [
     {
@@ -38,7 +39,7 @@
         { "value": "16.6W", "label": "赞藏" }
       ],
       "scripts": [
-        { "label": "小红书主页", "url": "https://www.xiaohongshu.com/user/profile/6041aed60000000001008bea", "type": "link" },
+        { "label": "小红书主页", "url": "https://xhslink.com/m/8nRDw6qfxC9", "type": "link" },
         { "label": "Southbank Place 脚本", "url": "downloads/scripts/southbank place.html", "type": "doc" },
         { "label": "The Green Quarter 脚本", "url": "downloads/scripts/The Green Quarter口播脚本.html", "type": "doc" }
       ]
@@ -92,6 +93,61 @@
       ]
     },
     {
+      "title": "护肤口播脚本 · 高效护肤搭子",
+      "description": "护肤垂类口播脚本，结合达人人设与产品卖点，突出使用场景与痛点解决。",
+      "image": "images/content-skincare-3.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "护肤", "label": "垂类" },
+        { "value": "口播", "label": "形式" }
+      ]
+    },
+    {
+      "title": "护肤口播脚本 · 变美分享",
+      "description": "护肤好物分享脚本，以个人使用体验切入，自然植入产品卖点与搭配建议。",
+      "image": "images/content-skincare-4.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "护肤", "label": "垂类" },
+        { "value": "种草", "label": "形式" }
+      ]
+    },
+    {
+      "title": "护肤口播脚本 · 达人合作",
+      "description": "护肤垂类达人合作脚本，结合达人人设与产品调性，打造真实种草内容。",
+      "image": "images/content-skincare-1.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "护肤", "label": "垂类" },
+        { "value": "达人", "label": "合作" }
+      ]
+    },
+    {
+      "title": "护肤口播脚本 · 产品测评",
+      "description": "护肤产品测评脚本，从成分、功效、使用感受等维度进行专业评测。",
+      "image": "images/content-skincare-2.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "护肤", "label": "垂类" },
+        { "value": "测评", "label": "形式" }
+      ]
+    },
+    {
+      "title": "护肤口播脚本 · 使用场景",
+      "description": "护肤产品使用场景脚本，结合日常生活场景展示产品效果与适用人群。",
+      "image": "images/content-skincare-5.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "护肤", "label": "垂类" },
+        { "value": "场景", "label": "展示" }
+      ]
+    },
+    {
       "title": "Instagram / Facebook 运营",
       "description": "发布活动文案、收房案例、新房预热、热点图文及国内平台买房视频搬运，服务海外华人客群。",
       "image": "images/social-instagram.png",
@@ -100,6 +156,62 @@
       "stats": [
         { "value": "Ins", "label": "内容运营" },
         { "value": "FB", "label": "活动传播" }
+      ]
+    },
+    {
+      "title": "日本房产为什么值得投资？",
+      "description": "全球四大湾区之一东京湾区房产投资分析，从经济、政策、租金回报等维度深度解读。",
+      "image": "images/content-wechat-1.jpg",
+      "category": "wechat",
+      "badge": "房产分析",
+      "stats": [
+        { "value": "公众号", "label": "平台" },
+        { "value": "深度", "label": "长文" }
+      ],
+      "scripts": [
+        { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/NaMOTpA0dNcevYnxllbebQ", "type": "link" }
+      ]
+    },
+    {
+      "title": "英国买房需要几步？三分钟帮你理清楚！",
+      "description": "英国购房流程全解析，从选房、贷款、过户到入住，一站式购房指南。",
+      "image": "images/content-wechat-2.jpg",
+      "category": "wechat",
+      "badge": "购房指南",
+      "stats": [
+        { "value": "公众号", "label": "平台" },
+        { "value": "干货", "label": "长文" }
+      ],
+      "scripts": [
+        { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/G_pBPkhfTz77wibRAKuPFw", "type": "link" }
+      ]
+    },
+    {
+      "title": "伦敦区域介绍：北京 vs 伦敦",
+      "description": "伦敦各区域房产特点与北京对比分析，帮助华人买家快速理解伦敦房产市场格局。",
+      "image": "images/content-wechat-3.jpg",
+      "category": "wechat",
+      "badge": "区域分析",
+      "stats": [
+        { "value": "公众号", "label": "平台" },
+        { "value": "对比", "label": "长文" }
+      ],
+      "scripts": [
+        { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/Hvkhg0WDWIUnlvx4BvuYDA", "type": "link" }
+      ]
+    },
+    {
+      "title": "留子语言退化：出国前后的变化",
+      "description": "留学生语言习惯变化观察，结合热点话题与留学生活共鸣点，增强账号亲和力。",
+      "image": "images/content-wechat-4.jpg",
+      "category": "wechat",
+      "badge": "留学热点",
+      "stats": [
+        { "value": "公众号", "label": "平台" },
+        { "value": "热点", "label": "长文" }
+      ],
+      "scripts": [
+        { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/170DJieMbJ7X6k6tIq9U0Q", "type": "link" }
       ]
     }
   ]
