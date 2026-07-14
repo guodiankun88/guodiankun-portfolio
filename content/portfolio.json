@@ -89,6 +89,34 @@
       ]
     },
     {
+      "title": "谷雨细胞密素次抛 · 王开花脚本",
+      "description": "谷雨细胞密素次抛产品脚本，结合达人人设与产品卖点，打造真实种草内容。",
+      "image": "images/content-skincare-3.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "谷雨", "label": "品牌" },
+        { "value": "细胞密素", "label": "产品" }
+      ],
+      "scripts": [
+        { "label": "脚本 V6 改稿", "url": "downloads/scripts/guyu-cell-script-v6.html", "type": "doc" }
+      ]
+    },
+    {
+      "title": "谷雨外泌素次抛 · 王开花脚本",
+      "description": "谷雨外泌素次抛产品脚本，结合达人人设与产品卖点，打造真实种草内容。",
+      "image": "images/content-skincare-4.png",
+      "category": "content",
+      "badge": "护肤脚本",
+      "stats": [
+        { "value": "谷雨", "label": "品牌" },
+        { "value": "外泌素", "label": "产品" }
+      ],
+      "scripts": [
+        { "label": "脚本修改稿 V2", "url": "downloads/scripts/guyu-exosome-script-v2.html", "type": "doc" }
+      ]
+    },
+    {
       "title": "Instagram / Facebook 运营",
       "description": "发布活动文案、收房案例、新房预热、热点图文及国内平台买房视频搬运，服务海外华人客群。",
       "image": "images/social-instagram.png",
@@ -100,56 +128,56 @@
       ]
     },
     {
-      "title": "日本房产为什么值得投资？",
-      "description": "全球四大湾区之一东京湾区房产投资分析，从经济、政策、租金回报等维度深度解读。",
+      "title": "报告分析｜伦敦租金终迎反弹！3月英国租房数据出炉",
+      "description": "根据Homelet数据，伦敦今年3月租金对比今年2月小幅上涨1.6%，分析英国租赁市场趋势。",
       "image": "images/content-wechat-1.jpg",
       "category": "wechat",
-      "badge": "房产分析",
+      "badge": "租房报告",
       "stats": [
         { "value": "公众号", "label": "平台" },
-        { "value": "深度", "label": "长文" }
+        { "value": "报告", "label": "分析" }
       ],
       "scripts": [
         { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/NaMOTpA0dNcevYnxllbebQ", "type": "link" }
       ]
     },
     {
-      "title": "英国买房需要几步？三分钟帮你理清楚！",
-      "description": "英国购房流程全解析，从选房、贷款、过户到入住，一站式购房指南。",
+      "title": "报告分析｜四连涨！4月英国房价数据出炉",
+      "description": "英国房价连续四个月上涨，英镑汇率一度冲破9.7，分析关税政策对房产市场的影响。",
       "image": "images/content-wechat-2.jpg",
       "category": "wechat",
-      "badge": "购房指南",
+      "badge": "房价报告",
       "stats": [
         { "value": "公众号", "label": "平台" },
-        { "value": "干货", "label": "长文" }
+        { "value": "报告", "label": "分析" }
       ],
       "scripts": [
         { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/G_pBPkhfTz77wibRAKuPFw", "type": "link" }
       ]
     },
     {
-      "title": "伦敦区域介绍：北京 vs 伦敦",
-      "description": "伦敦各区域房产特点与北京对比分析，帮助华人买家快速理解伦敦房产市场格局。",
+      "title": "新闻合集：真正的赢家是英国？英镑大暴涨！",
+      "description": "伦敦高档地区房价跳水，申请公校学生数量创纪录，多维度解读英国经济热点。",
       "image": "images/content-wechat-3.jpg",
       "category": "wechat",
-      "badge": "区域分析",
+      "badge": "新闻合集",
       "stats": [
         { "value": "公众号", "label": "平台" },
-        { "value": "对比", "label": "长文" }
+        { "value": "新闻", "label": "合集" }
       ],
       "scripts": [
         { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/Hvkhg0WDWIUnlvx4BvuYDA", "type": "link" }
       ]
     },
     {
-      "title": "留子语言退化：出国前后的变化",
-      "description": "留学生语言习惯变化观察，结合热点话题与留学生活共鸣点，增强账号亲和力。",
+      "title": "英国学区知多少｜伦敦重点学区——巴尼特 Barnet",
+      "description": "伦敦巴尼特区学区深度解析，帮助华人家庭了解英国教育资源和学区房选择。",
       "image": "images/content-wechat-4.jpg",
       "category": "wechat",
-      "badge": "留学热点",
+      "badge": "学区分析",
       "stats": [
         { "value": "公众号", "label": "平台" },
-        { "value": "热点", "label": "长文" }
+        { "value": "教育", "label": "学区" }
       ],
       "scripts": [
         { "label": "查看原文", "url": "https://mp.weixin.qq.com/s/170DJieMbJ7X6k6tIq9U0Q", "type": "link" }
